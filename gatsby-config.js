@@ -2,13 +2,13 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-typescript-plus',
-    description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
-    siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
+    title: 'TC\'s KNOWLEDGE BASE',
+    description: 'This is a knowledgebase for TC.',
+    siteUrl: 'https://knowledgebase.dev',
     author: {
-      name: 'Resi Respati',
-      url: 'https://twitter.com/resir014',
-      email: 'resir014@gmail.com'
+      name: 'Takayuki Cho',
+      url: 'https://twitter.com/ChangGuizhiT',
+      email: 'taka.3365@gmail.com'
     }
   },
   plugins: [
@@ -50,10 +50,18 @@ module.exports = {
         siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
       }
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /imgs/
+        }
+      }
+    },
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
   ]
 }

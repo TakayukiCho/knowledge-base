@@ -83,3 +83,25 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
+exports.onCreateWebpackConfig = ({
+  stage,
+  rules,
+  loaders,
+  plugins,
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.svg$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'svg-react-loader',
+          },
+        }
+      ],
+    },
+  })
+}
