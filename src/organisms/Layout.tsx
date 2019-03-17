@@ -5,9 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import 'modern-normalize'
 import '../styles/normalize'
 
-import Header from '../components/Header'
+import Header from './Header'
 import LayoutRoot from '../components/LayoutRoot'
-import LayoutMain from '../components/LayoutMain'
+import LayoutMain from '../templates/LayoutMain'
 
 type StaticQueryProps = {
   site: {

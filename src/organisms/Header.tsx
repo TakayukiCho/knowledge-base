@@ -4,7 +4,7 @@ import { transparentize } from 'polished'
 import { Link } from 'gatsby'
 
 import { heights, dimensions, colors } from '../styles/variables'
-import Container from './Container'
+import Container from '../components/Container'
 
 // @ts-ignore
 import Logo from '-!svg-react-loader!../imgs/logo.svg'

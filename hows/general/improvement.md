@@ -1,6 +1,7 @@
-# Title
-
-(short description)
+---
+title: "Improvement"
+tags: ["animals", "Chicago", "zoos"]
+---
 
 # Outline
 - Why? -> Do dont by when
