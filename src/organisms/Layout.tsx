@@ -6,8 +6,8 @@ import 'modern-normalize'
 import '../styles/normalize'
 
 import Header from './Header'
-import LayoutRoot from '../components/LayoutRoot'
-import LayoutMain from '../templates/LayoutMain'
+import LayoutRoot from '../atoms/LayoutRoot'
+import LayoutMain from '../atoms/LayoutMain'
 
 type StaticQueryProps = {
   site: {
@@ -34,7 +34,13 @@ const IndexLayout: React.SFC = ({ children }) => (
       <LayoutRoot>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[{ name: 'description', content: data.site.siteMetadata.description }, { name: 'keywords', content: 'knowledgebase life' }]}
+          meta={[
+            {
+              name: 'description',
+              content: data.site.siteMetadata.description
+            },
+            { name: 'keywords', content: 'knowledgebase life' }
+          ]}
         />
         <Header title={data.site.siteMetadata.title} />
         <LayoutMain>{children}</LayoutMain>

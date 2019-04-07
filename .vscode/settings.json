@@ -12,5 +12,10 @@
   "search.exclude": {
     "public/**": true,
     "node_modules/**": true
-  }
+  },
+  "spellright.language": [],
+  "spellright.documentTypes": [
+    "latex",
+    "plaintext"
+  ]
 }
